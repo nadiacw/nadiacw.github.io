@@ -1,0 +1,99 @@
+<html>
+
+<head>
+	<title>Takt - Nadia Campo Woytuk</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+
+<body>
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+
+				<!-- Nav -->
+				<nav class="back">
+					<ul>
+						<li><a href="../index.html" style="color:#585858;"><i class="material-icons" style="font-size:3em">arrow_back</i></a></li>
+					</ul>
+				</nav>
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
+
+			</div>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../about.html">About</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<h1>TAKT</h1>
+				<h4>A gesture-enabled sound surface</h4>
+				<p></p>
+				<iframe src="https://www.youtube.com/embed/U-HeeBtR70U" width="100%" height="400em" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				<p></p>
+				<!-- <span class="image fit"><img src="../images/ms4.png" alt="" /></span> -->
+				<p>This projects involves exploring and prototyping a <b>physical sound interface</b> consisting of an <b>advanced capacitive sensor</b> on a surface controlled by touch gesture interactions. We went through a process of exploring materials, setting
+					up the prototype, and defining a specific use case for the interface. We presented the interface in a “dining” context, where users sit at a table and music is triggered by the position of their bodies (mostly hands and arms) in relation to the surface.
+					We discussed and explored what music mappings fit best in the interface and for this specific context. Finally, we suggested further applications and reflected on other uses and contexts for the interface.</p>
+				<span class="image halfL"><img src="../images/tk03.jpg" alt=""/></span>
+				<span class="image halfR"><img src="../images/tk02.gif" alt=""/></span>
+				<p>Our final prototype consists of a wooden sushi placemat and a tinfoil sheet attached to it underneath. To exemplify our use case of the interface we filmed a video [10]. Due to the tabletop setting, we decided to use the interface to control the music
+					in a dinner setting. Specifically, a dinner between two people.</p>
+				<span class="image fit"><img src="../images/tk04.jpg" alt=""/></span>
+				<p></p>
+				<p>The capacitance data provided by the sensor is read via Serial communication in a Processing patch and then fed via OSC (Open Sound Control) to a recognition system (we used the software Wekinator) that will be previously trained to recognize different
+					gestures or body actions occurring on the table. The recognition system decides what event has likely occurred and sends messages via OSC to a music interface that adapts a music track accordingly. The musical mapping takes place in Max/Msp and is
+					connected to a digital audio workspace, specifically, Ableton, to introduce new tracks/samples and fade out others according to the mappings in the Max/Msp patch. </p>
+				<span class="image fit"><img src="../images/tk05.jpg" alt=""/></span>
+				<p>This project was designed and developed by Niek Bijman and Nadia Campo Woytuk.</p>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<section>
+					<ul class="icons">
+						<li><a href="https://twitter.com/nadiacw" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/nadiacw" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="mailto:ncampowoytuk@gmail.com" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</section>
+				<ul class="copyright">
+					<li>&copy; Nadia Campo Woytuk</li>
+				</ul>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/skel.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

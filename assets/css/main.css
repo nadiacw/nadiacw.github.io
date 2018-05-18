@@ -2391,7 +2391,7 @@
 				width: 50%;
 			}
 			.image.halfR {
-				float: right;
+				/* float: right; */
 				padding: 0 0 0 0.3em;
 				margin: 0 0 2em 0;
 				width: 50%;
