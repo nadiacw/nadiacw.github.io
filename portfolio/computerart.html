@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<script type="text/javascript" src="../assets/js/instafeed.min.js"></script>
+	<script src='https://neadeeia.herokuapp.com/token.js'></script>
 </head>
 
 <body>
@@ -48,12 +50,22 @@
 		<div id="main">
 			<div class="inner">
 
-				<h3>creative coding and software art</h3>
+				<h3>generative art and software art</h3>
 
-				<p>I'm currently part of <b><a href="http://rethread.art/">rethread</a></b>, a group of artists and
+				<p>Instagram feed of my generative art and software art. Some of the work has been done as part of <b><a href="http://rethread.art/">rethread</a></b>, a group of artists and
 					researchers at KTH working with software art.</p>
 
-				<blockquote class="instagram-media"
+
+				<div id="instafeed"></div>
+
+				<script type="text/javascript">
+					var feed = new Instafeed({
+						accessToken: InstagramToken
+					});
+					feed.run();
+				</script>
+
+				<!-- <blockquote class="instagram-media"
 					data-instgrm-permalink="https://www.instagram.com/p/B780liSHXY8/?utm_source=ig_embed&amp;utm_campaign=loading"
 					data-instgrm-version="12"
 					style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
@@ -146,7 +158,7 @@
 								datetime="2020-01-30T16:22:26+00:00">Jan 30, 2020 at 8:22am PST</time></p>
 					</div>
 				</blockquote>
-				<script async src="//www.instagram.com/embed.js"></script>
+				<script async src="//www.instagram.com/embed.js"></script> -->
 
 
 			</div>

@@ -6,7 +6,6 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-	<link href="https://fonts.googleapis.com/css?family=Yatra+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Harmattan&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lato:300,400|Work+Sans:300,400" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -23,6 +22,9 @@
 
 		gtag('config', 'UA-135894262-1');
 	</script>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+	<script src="assets/js/sketch_trail.js"></script>
+	
 
 </head>
 
@@ -30,34 +32,32 @@
 	<!-- Wrapper -->
 	<div id="wrapper">
 
-		<!-- Header -->
-		<header id="header">
-			<div class="inner">
-
-				<!-- Nav hamburger -->
-				<!-- <nav>
-					<ul>
-						<li><a href="#menu">Menu</a></li>
-					</ul>
-				</nav> -->
-
-			</div>
-		</header>
-
 		<!-- Main -->
 		<div id="main">
-			<div class="inner" style="width: 60%;">
-				<header>
-					<p id="title" style="text-align: center">Nadia Campo Woytuk</p>
-				</header>
+			<!-- Header -->
+			<header id="main_header">
+				<div class="content">
+					<p id="title" style="text-align: right">Nadia Campo Woytuk</p>
+					<!-- Menu -->
+					<div id="menu_block">
 
-				<!-- Menu -->
-				<div id="menu_bar">
-					<p><a href="research.html">research</a> ·· <a href="teaching.html">teaching</a> ·· <a
-							href="about.html">about</a></p>
+						<p><a href="research.html">research</a></p>
+						<br>
+						<p><a href="teaching.html">teaching</a></p>
+						<br>
+						<p><a href="about.html">about</a></p>
+						<br>
+						<p><a href="#projects">projects</a></p>
+						<p><a href="#projects">&#x1F447;</a></p>
+						<!-- <p><a href="research.html">research</a> ·· <a href="teaching.html">teaching</a> ·· <a
+								href="about.html">about</a></p> -->
+					</div>
 				</div>
+			</header>
 
-				<section class="tiles">
+			<div class="inner" style="width: 60%;">
+
+				<section id="projects" class="tiles">
 
 					<article class="style1" style="width: 100%">
 						<span class="image">
