@@ -22,7 +22,6 @@ function windowResized() {
     resizeCanvas(w, h, true);
 }
 
-let c1, c2;
 let t = 0;
 
 function setup() {
@@ -54,15 +53,18 @@ function mouseMoved() {
         // let c = color(170 + 60 * sin(i * 0.02 + t), 100 + 70 * sin(i * 0.015 + t), 200 + 200 * sin(i * 0.012 + t));
         let c = color(120 + 190 * sin(i * 0.06 + t), 130 + 190 * sin(i * 0.02 + t), 120 + 120 * sin(i * 0.09 + t));
         fill(c)
-        ellipse(trail[i][0], trail[i][1], 200, 200);
+        ellipse(trail[i][0], trail[i][1], 300 * sin(i * 0.03 + t), 300 * sin(i * 0.03 + t));
+        let c1 = color(120 + 190 * sin(i * 0.04 + t), 130 + 190 * sin(i * 0.01 + t), 120 + 120 * sin(i * 0.03 + t));
+        fill(c1)
+        ellipse(trail[i][0] + 200 * cos(t), trail[i][1] + 200 * sin(t), 100 * sin(i * 0.01 + t), 100 * sin(i * 0.01 + t));
     }
     if (trail.length == l) {
         trail.shift();
     }
-    t += 0.03;
+    t += 0.02;
 
     let new_x = map(mouseX, 0, width, 0, 40);
     let new_blur = "blur(" + new_x + "px)";
     canvas.style("filter", new_blur);
-    // canvas.style("filter", "blur(0px)");
+    // canvas.style("filter", "blur(0px)"); // debug
 }
